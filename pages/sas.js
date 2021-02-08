@@ -8,7 +8,7 @@ function Sas({ data }) {
 
 /* Retrieves pet(s) data from mongodb database */
 export async function getServerSideProps() {
-  return { props: { data: process.env } };
+  return { props: { data: process.env.MONGO_URL } };
 }
 
 export default Sas;
